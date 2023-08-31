@@ -1,28 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Form Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./formstyle.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <title>Subscribe</title>
+    <link href="./formstyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1> Subscribe</h1>
-    <form action="/submit" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-        <br>
-        
-        <input type="submit" value="Submit">
-    </form>
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="formpage.html">Form Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="subscribe-section">
+        <h1>Subscribe</h1>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section id="donation-section">
+        <h1>Make a Donation</h1>
+        <form action="process_donation.php" method="POST">
+            <label for="donation-name">Name:</label>
+            <input type="text" id="donation-name" name="name" required><br>
+            
+            <label for="donation-email">Email:</label>
+            <input type="email" id="donation-email" name="email" required><br>
+            
+            <label for="amount">Donation Amount:</label>
+            <input type="number" id="amount" name="amount" min="1" step="1" required><br>
+            
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="debit-card">Debit Card</option>
+            </select><br>
+            
+            <label for="card-number">Credit Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required><br>
+            
+            <label for="expiration">Expiration Date:</label>
+            <input type="text" id="expiration" name="expiration" placeholder="MM/YYYY" required><br>
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required><br>
+            
+            <button type="submit">Donate</button>
+        </form>
+    </section>
 </body>
 </html>
