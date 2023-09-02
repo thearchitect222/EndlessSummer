@@ -10,6 +10,13 @@
 
 .mission-statement{
     text-align: center;}
+ 
+ .field-exchange{
+  border-color: aqua;
+  border-style:solid;
+  margin-right: 700px;
+  height:200px;
+ }   
 
 .active-purple input[type=text] {
     border-bottom: 1px solid #ce93d8;
@@ -40,7 +47,9 @@ ul {
     color: #333;
   }
 /* footer{
-    
+  justify-content: center;
+
+     
 } */
 
 .social{
@@ -48,10 +57,11 @@ ul {
     bottom:0;
     width:100%;
     background-color:coral;
+  
 }
 .fa {  
     padding: 20px;  
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;  
     margin: 5px 2px;  
     font-size: 30px;  
