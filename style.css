@@ -16,12 +16,16 @@
   border-style:solid;
   margin-right: 700px;
   height:200px;
- }   
+ } 
+ .our-work{
+  border-color: aqua;
+  border-style:solid;
+  margin-right: 700px;
+  height:200px;
+  padding-top: 30px;
 
-/* .active-purple input[type=text] {
-    border-bottom: 1px solid #ce93d8;
-    box-shadow: 0 1px 0 0 #ce93d8;}     */
-    
+ }  
+
 .nav-bar{
     display: flex;
     justify-content: center;
@@ -46,22 +50,24 @@ ul {
     text-decoration: none;
     color: #333;
   }
-/* footer{
+ footer{
   justify-content: center;
 
      
-} */
+} 
 
 .social{
     position:fixed;
     bottom:0;
     width:100%;
     background-color:coral;
+    justify-content:space-evenly;
+    display:flex;
   
 }
 .fa {  
     padding: 20px;  
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;  
     margin: 5px 2px;  
     font-size: 30px;  
