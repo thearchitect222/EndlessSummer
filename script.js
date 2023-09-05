@@ -1,11 +1,11 @@
-function validateForm() {
-    var nameField = document.getElementById("name");
-    var nameValue = nameField.value.trim(); // Remove leading and trailing whitespace
+const donationSubmitBtn = document.getElementById("donation-submit-btn");
 
-    if (nameValue === "") {
-        alert("Name is required");
-        nameField.focus();
-        return false; // Prevent form submission
-    }
-}
-
+donationSubmitBtn.addEventListener("click", (event) => {
+    event.preventDefault()
+    console.log('myEvent');
+//   if (email.validity.typeMismatch) {
+//     email.setCustomValidity("I am expecting an email address!");
+//   } else {
+//     email.setCustomValidity("");
+//   }
+});
