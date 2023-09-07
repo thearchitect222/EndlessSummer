@@ -4,7 +4,7 @@
     padding: 0;
 }
  body{
-    background-color: #F89B9B;
+  background-color: #D8BFD8;
 
  }
 
@@ -17,25 +17,28 @@
   margin-right: 700px;
   height:200px;
  } 
- .our-work{
-  border-color: aqua;
-  border-style:solid;
-  margin-right: 700px;
-  height:200px;
-  padding-top: 30px;
-
- }  
-
-.nav-bar{
+ .nav-bar{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
-    padding-top: 15px;
+    /* padding-bottom: 30px;
+    padding-top: 15px; */
 }
 header{
-    background-color:coral;
+    background-color:#F4978E;
+    color: #333;
+    display: flex;
+    justify-content:space-between;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.searchbar{
+  display: flex;
+  float: right;
+  justify-content: flex-end; 
+} 
+
 ul {
     display: flex;
     list-style: none;
