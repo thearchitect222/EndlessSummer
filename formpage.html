@@ -11,18 +11,21 @@
     <header>
         <nav class="nav-bar">
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="formpage.html">Form Page</a></li>
             </ul>
         </nav>
+        <form class="searchbar" action="_blank">
+            <input class="searchbar" type="text" placeholder="Tell me about.." name="search">
+            <button type="submit"> Search</button>
+          </form> 
     </header>
-
-    <section id="subscribe-section">
+    <section  class="form" id="subscribe-section">
         <h1>Subscribe</h1>
         <form action="/submit" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name" name="name" required ><br>
             
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br>
@@ -34,9 +37,9 @@
         </form>
     </section>
 
-    <section id="donation-section">
+    <section  class="form" id="donation-section">
         <h1>Make a Donation</h1>
-        <form action="process_donation.php" method="POST">
+        <form method="POST">
             <label for="donation-name">Name:</label>
             <input type="text" id="donation-name" name="name" required><br>
             
@@ -62,8 +65,18 @@
             <label for="cvv">CVV:</label>
             <input type="text" id="cvv" name="cvv" required><br>
             
-            <button type="submit">Donate</button>
+            <button id="donation-submit-btn" type="submit">Donate</button>
         </form>
     </section>
+ <footer> 
+        <div class="social">
+          <a href="https://www.facebook.com/ennonline/" target='_blank' class="fa fa-facebook"></a>
+          <a href="https://www.linkedin.com/company/emergency-nutrition-network/?originalSubdomain=uk" target='_blank' class="fa fa-linkedin"></a>
+          <a href="https://www.youtube.com/channel/UC6fS6gY8WCWL8HRdT-L9hKg" target='_blank' class="fa fa-youtube"></a>
+          <a href="https://x.com/ennonline?s=21&t=CEYjaKr7zo0zTv3TVgsnfA" target='_blank' class="fa fa-twitter"></a>
+        </div>
+        <script src="script.js"></script>
+      </footer>
+      
 </body>
 </html>
